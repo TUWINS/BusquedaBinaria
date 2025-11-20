@@ -6,9 +6,6 @@ import java.io.IOException;
 
 public class BusquedaBinaria {
 
-    public static int busquedaBinaria(int[] arreglo, int objetivo) {
-
-
         public static int binarySearch(int[] arr, int target) {
         int left = 0, right = arr.length - 1, closest = -1;  /*  Inicializa los límites de búsqueda (izquierda y derecha) y closest como -1 (único para aproximación)*/
         while (left <= right) {  /*  Continúa mientras haya elementos por buscar (izquierda <= derecha)*/
@@ -22,7 +19,7 @@ public class BusquedaBinaria {
             else right = mid - 1;  /*  Si el elemento en mid es mayor que target, busca en la mitad izquierda (ajusta derecha)*/
         }
         return closest;  
-    }
+        }
         public static void main(String[] args) {  /*  Método principal que ejecuta el programa, lee entrada, busca y escribe salida*/
         try {
             // Abre el archivo de entrada para leer el arreglo y el target
@@ -44,4 +41,7 @@ public class BusquedaBinaria {
         } catch (IOException e) {  /*  Captura excepciones de entrada/salida*/
             e.printStackTrace();  /*  Imprime la traza del error*/
         }
-}
+    
+}   }
+
+            
